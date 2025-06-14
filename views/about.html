@@ -15,6 +15,67 @@
     <script src="" type="module"></script>
   </head>
   <body hx-boost="true">
+    <header>
+      <div>
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          <h2>LOGO</h2>
+        </a>
+      </div>
+      <div class="link-container">
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          HOME
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/about.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/about"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          ABOUT
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/projects.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/projects"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          PROJECTS
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/contact.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/contact"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          CONTACT
+        </a>
+      </div>
+    </header>
     <main id="main-container" class="htmx-fade-in htmx-fade-out">
       <h1>ABOUT</h1>
       <span class="dashed-line-lg"></span>
@@ -158,5 +219,55 @@
         </p>
       </section>
     </main>
+    <footer>
+      <div class="flex-col">
+        <h3>Site Map</h3>
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          HOME
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/about.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/about"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          ABOUT
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/projects.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/projects"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          PROJECTS
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/contact.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/contact"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          CONTACT
+        </a>
+      </div>
+      <p>&copy; 2025 Lukas. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -100,6 +100,7 @@
     color: var(--text);
     font-family: var(--font-base);
     line-height: 1.6rem;
+    margin-bottom: 300px;
     min-width: 100vw;
     overflow-x: hidden;
   }
@@ -135,7 +136,6 @@
     gap: var(--gap-3xl);
     justify-content: flex-start;
     min-height: 100vh;
-    margin-bottom: 300px;
     padding: var(--p-lg);
     width: 100vw;
   }
