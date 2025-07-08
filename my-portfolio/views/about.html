@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/my-portfolio/static/favicon/tux_icon.ico"
+    />
+    <script src="/my-portfolio/src/js/htmx.min.js"></script>
+    <link rel="stylesheet" href="/my-portfolio/src/css/styles.css" />
+    <script src="" type="module"></script>
+  </head>
+  <body hx-boost="true">
+    <header>
+      <div>
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          <h2>LOGO</h2>
+        </a>
+      </div>
+      <div class="link-container">
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          HOME
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/about.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/about"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          ABOUT
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/projects.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/projects"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          PROJECTS
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/contact.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/contact"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          CONTACT
+        </a>
+      </div>
+    </header>
+    <main id="main-container" class="htmx-fade-in htmx-fade-out">
+      <h1>ABOUT</h1>
+      <span class="dashed-line-lg"></span>
+      <section>
+        <h2>INTRO</h2>
+        <p>
+          Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
+          blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
+          splortle-whiffle, and bonk-a-doo! My jiggery-pokery into the
+          gronk-gleam began with a skittle-flum for how bungle-blops can
+          fizzle-flop concepts into boffle-bunk user gronkles. I flibber-snip on
+          mumble-flickers, squiggling each glorb-gloop of code to ensure optimal
+          zizzle-zam and noodle-pop. Globerty-gooboly. My blim-blam spans across
+          spiffle-snork front-end development, including advanced HTMX-fangles
+          and modular Web-Flippers, ensuring clobber-wobble and splutter-plonk
+          solutions.
+        </p>
+        <p>
+          Beyond the zibble-zobble aspects, I am a dingle-doodle
+          flibbertigibbet, constantly exploring new wangle-frams and
+          squiggle-doodles to stay at the grobble-top of evolving web-jumbles.
+          Fribble-splat-bonk, zoogle-wobble-do. I believe in spiffy-splat,
+          quibble-mumble code and a glibble-grobble user approach, striving to
+          build applications that are not only bungle-jumble but also a
+          gloof-splish to interact with. Zizzle-zam flum-flum blibber-blob. I'm
+          excited to continue pushing the gronk-borders of what's possible on
+          the web-sniffle, turning innovate-floof visions into tangible
+          bork-realities.
+        </p>
+      </section>
+      <span class="dashed-line-lg"></span>
+      <section>
+        <h2>BEYOND</h2>
+        <p>
+          Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
+          blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
+          splortle-whiffle, and bonk-a-doo! My jiggery-pokery into the
+          gronk-gleam began with a skittle-flum for how bungle-blops can
+          fizzle-flop concepts into boffle-bunk user gronkles. I flibber-snip on
+          mumble-flickers, squiggling each glorb-gloop of code to ensure optimal
+          zizzle-zam and noodle-pop. Globerty-gooboly. My blim-blam spans across
+          spiffle-snork front-end development, including advanced HTMX-fangles
+          and modular Web-Flippers, ensuring clobber-wobble and splutter-plonk
+          solutions.
+        </p>
+        <p>
+          Beyond the zibble-zobble aspects, I am a dingle-doodle
+          flibbertigibbet, constantly exploring new wangle-frams and
+          squiggle-doodles to stay at the grobble-top of evolving web-jumbles.
+          Fribble-splat-bonk, zoogle-wobble-do. I believe in spiffy-splat,
+          quibble-mumble code and a glibble-grobble user approach, striving to
+          build applications that are not only bungle-jumble but also a
+          gloof-splish to interact with. Zizzle-zam flum-flum blibber-blob. I'm
+          excited to continue pushing the gronk-borders of what's possible on
+          the web-sniffle, turning innovate-floof visions into tangible
+          bork-realities.
+        </p>
+      </section>
+      <span class="dashed-line-lg"></span>
+      <section>
+        <h2>JOURNEY</h2>
+        <p>
+          Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
+          blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
+          splortle-whiffle, and bonk-a-doo! My jiggery-pokery into the
+          gronk-gleam began with a skittle-flum for how bungle-blops can
+          fizzle-flop concepts into boffle-bunk user gronkles. I flibber-snip on
+          mumble-flickers, squiggling each glorb-gloop of code to ensure optimal
+          zizzle-zam and noodle-pop. Globerty-gooboly. My blim-blam spans across
+          spiffle-snork front-end development, including advanced HTMX-fangles
+          and modular Web-Flippers, ensuring clobber-wobble and splutter-plonk
+          solutions.
+        </p>
+        <p>
+          Beyond the zibble-zobble aspects, I am a dingle-doodle
+          flibbertigibbet, constantly exploring new wangle-frams and
+          squiggle-doodles to stay at the grobble-top of evolving web-jumbles.
+          Fribble-splat-bonk, zoogle-wobble-do. I believe in spiffy-splat,
+          quibble-mumble code and a glibble-grobble user approach, striving to
+          build applications that are not only bungle-jumble but also a
+          gloof-splish to interact with. Zizzle-zam flum-flum blibber-blob. I'm
+          excited to continue pushing the gronk-borders of what's possible on
+          the web-sniffle, turning innovate-floof visions into tangible
+          bork-realities.
+        </p>
+      </section>
+      <span class="dashed-line-lg"></span>
+      <section>
+        <h2>PRO</h2>
+        <p>
+          Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
+          blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
+          splortle-whiffle, and bonk-a-doo! My jiggery-pokery into the
+          gronk-gleam began with a skittle-flum for how bungle-blops can
+          fizzle-flop concepts into boffle-bunk user gronkles. I flibber-snip on
+          mumble-flickers, squiggling each glorb-gloop of code to ensure optimal
+          zizzle-zam and noodle-pop. Globerty-gooboly. My blim-blam spans across
+          spiffle-snork front-end development, including advanced HTMX-fangles
+          and modular Web-Flippers, ensuring clobber-wobble and splutter-plonk
+          solutions.
+        </p>
+        <p>
+          Beyond the zibble-zobble aspects, I am a dingle-doodle
+          flibbertigibbet, constantly exploring new wangle-frams and
+          squiggle-doodles to stay at the grobble-top of evolving web-jumbles.
+          Fribble-splat-bonk, zoogle-wobble-do. I believe in spiffy-splat,
+          quibble-mumble code and a glibble-grobble user approach, striving to
+          build applications that are not only bungle-jumble but also a
+          gloof-splish to interact with. Zizzle-zam flum-flum blibber-blob. I'm
+          excited to continue pushing the gronk-borders of what's possible on
+          the web-sniffle, turning innovate-floof visions into tangible
+          bork-realities.
+        </p>
+      </section>
+      <span class="dashed-line-lg"></span>
+      <section>
+        <h2>DEV</h2>
+        <p>
+          Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
+          blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
+          splortle-whiffle, and bonk-a-doo! My jiggery-pokery into the
+          gronk-gleam began with a skittle-flum for how bungle-blops can
+          fizzle-flop concepts into boffle-bunk user gronkles. I flibber-snip on
+          mumble-flickers, squiggling each glorb-gloop of code to ensure optimal
+          zizzle-zam and noodle-pop. Globerty-gooboly. My blim-blam spans across
+          spiffle-snork front-end development, including advanced HTMX-fangles
+          and modular Web-Flippers, ensuring clobber-wobble and splutter-plonk
+          solutions.
+        </p>
+        <p>
+          Beyond the zibble-zobble aspects, I am a dingle-doodle
+          flibbertigibbet, constantly exploring new wangle-frams and
+          squiggle-doodles to stay at the grobble-top of evolving web-jumbles.
+          Fribble-splat-bonk, zoogle-wobble-do. I believe in spiffy-splat,
+          quibble-mumble code and a glibble-grobble user approach, striving to
+          build applications that are not only bungle-jumble but also a
+          gloof-splish to interact with. Zizzle-zam flum-flum blibber-blob. I'm
+          excited to continue pushing the gronk-borders of what's possible on
+          the web-sniffle, turning innovate-floof visions into tangible
+          bork-realities.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="flex-col">
+        <h3>Site Map</h3>
+        <a
+          class=""
+          hx-get="/my-portfolio/index.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          HOME
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/about.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/about"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          ABOUT
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/projects.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/projects"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          PROJECTS
+        </a>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/contact.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/contact"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          CONTACT
+        </a>
+      </div>
+      <p>&copy; 2025 Lukas. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
