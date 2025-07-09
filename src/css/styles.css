@@ -13,22 +13,14 @@
 
 @layer varaibles {
   :root {
-    /* Base Colors */
-    --base: #1e232c;
-    --base-alt: #2b323d;
-    --text: #e0e1e6;
-    --text-sub: #a0a5ae;
-    --border: #4d5769;
-
-    /* Highlight Colors */
-    --orange: #e0935d;
-    --orange-light: #f7c6a0;
-    --teal: #6dc2c9;
-    --teal-light: #a8e1e5;
-
-    /* Link Colors */
-    --link: #8fa6bb;
-    --link-hover: #ffffff;
+    --base: #002451;
+    --text: #ffffff;
+    --main: #8dfffe;
+    --sub: #9dff9a;
+    --err: #ff9b9b;
+    --warn: #ffe792;
+    --accent: #bbdaff;
+    --success: #79d749;
 
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
@@ -116,7 +108,7 @@
 
   footer {
     align-items: center;
-    background-color: var(--base-alt);
+    background-color: var(--base);
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -165,12 +157,12 @@
   }
 
   a {
-    color: var(--link);
+    color: var(--text);
     transition: color 0.4s ease;
   }
 
   a:hover {
-    color: var(--link-hover);
+    color: var(--sub);
   }
 
   button {
@@ -212,26 +204,26 @@
   }
 
   .dashed-line-lg {
-    border-top: 2px dashed var(--teal);
+    border-top: 2px dashed var(--main);
     width: 80%;
   }
 
   .dashed-line-md {
-    border-top: 2px dashed var(--teal);
+    border-top: 2px dashed var(--main);
     width: 50%;
   }
 
   .dashed-line-sm {
-    border-top: 2px dashed var(--teal);
+    border-top: 2px dashed var(--main);
     width: 20%;
   }
 
   .border-primary {
-    border: 2px solid var(--teal);
+    border: 2px solid var(--main);
     border-radius: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    outline: 2px solid var(--teal-light);
+    outline: 2px solid var(--main);
     outline-offset: 2px;
     transition:
       border-color 0.2s ease-out,
@@ -241,15 +233,15 @@
   }
 
   .border-primary:hover {
-    border-color: var(--orange);
-    outline-color: var(--orange-light);
+    border-color: var(--sub);
+    outline-color: var(--sub);
     transform: translateY(-3px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
   .border-primary:active {
-    border-color: var(--link-hover);
-    outline-color: var(--orange);
+    border-color: var(--sub);
+    outline-color: var(--sub);
     transform: translateY(0px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
