@@ -77,10 +77,10 @@
       </div>
     </header>
     <main id="main-container" class="htmx-fade-in htmx-fade-out">
-      <h1>LUKAS</h1>
+      <h1 class="header-primary">LUKAS</h1>
       <span class="dashed-line-lg"></span>
       <section>
-        <h2>ABOUT</h2>
+        <h2 class="header-secondary">ABOUT</h2>
         <p>
           Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
           blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
@@ -105,23 +105,21 @@
           the web-sniffle, turning innovate-floof visions into tangible
           bork-realities.
         </p>
-        <button class="border-primary">
-          <a
-            class=""
-            hx-get="/my-portfolio/views/about.html"
-            hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
-            hx-push-url="/my-portfolio/views/about"
-            hx-select="#main-container"
-            hx-swap="outerHTML swap:0.3s"
-            hx-target="#main-container"
-          >
-            Find Out More!
-          </a>
-        </button>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/about.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/about"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          <button class="border-primary">Find Out More!</button>
+        </a>
       </section>
       <span class="dashed-line-lg"></span>
       <section>
-        <h2>PROJECTS</h2>
+        <h2 class="header-secondary">PROJECTS</h2>
         <p>
           Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
           blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
@@ -146,23 +144,21 @@
           the web-sniffle, turning innovate-floof visions into tangible
           bork-realities.
         </p>
-        <button class="border-primary">
-          <a
-            class=""
-            hx-get="/my-portfolio/views/projects.html"
-            hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
-            hx-push-url="/my-portfolio/views/projects"
-            hx-select="#main-container"
-            hx-swap="outerHTML swap:0.3s"
-            hx-target="#main-container"
-          >
-            Check Em' Out!
-          </a>
-        </button>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/projects.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/projects"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          <button class="border-primary">Check Em' Out!</button>
+        </a>
       </section>
       <span class="dashed-line-lg"></span>
       <section>
-        <h2>CONTACT</h2>
+        <h2 class="header-secondary">CONTACT</h2>
         <p>
           Flimmerstump, I am a plickle-snatch of the digital jibbets, crafting
           blorg-flappy and wiffle-waffle interwebs. Clunk-doodle snickle-snork,
@@ -187,23 +183,21 @@
           the web-sniffle, turning innovate-floof visions into tangible
           bork-realities.
         </p>
-        <button class="border-primary">
-          <a
-            class=""
-            hx-get="/my-portfolio/views/contact.html"
-            hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
-            hx-push-url="/my-portfolio/views/contact"
-            hx-select="#main-container"
-            hx-swap="outerHTML swap:0.3s"
-            hx-target="#main-container"
-          >
-            Lets Chat!
-          </a>
-        </button>
+        <a
+          class=""
+          hx-get="/my-portfolio/views/contact.html"
+          hx-on::after-request="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          hx-push-url="/my-portfolio/views/contact"
+          hx-select="#main-container"
+          hx-swap="outerHTML swap:0.3s"
+          hx-target="#main-container"
+        >
+          <button class="border-primary">Lets Chat!</button>
+        </a>
       </section>
       <span class="dashed-line-lg"></span>
     </main>
-    <footer>
+    <footer class="htmx-fade-in htmx-fade-out">
       <div class="flex-col">
         <h3>Site Map</h3>
         <a
